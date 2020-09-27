@@ -1,16 +1,24 @@
+import Link from "next/link"
+
 export default function Navbar() {
   return (
     <>
       <nav>
-        <h1>Home Office</h1>
+        <Link href="/">
+          <a className="brand">Home Office</a>
+        </Link>
         <div className="menu">
           <div className="menu_tareas">
             <h5>Buscar tareas</h5>
             <h5>Publicar</h5>
           </div>
           <div className="menu_perfil">
-            <h5>Iniciar sesion</h5>
-            <h5>Registrate</h5>
+            <Link href="/login">
+              <a>Iniciar sesion</a>
+            </Link>
+            <Link href="/register">
+              <a>Registrate</a>
+            </Link>
           </div>
         </div>
       </nav>
@@ -23,7 +31,7 @@ export default function Navbar() {
           height: 64px;
         }
 
-        h1 {
+        .brand {
           margin-left: 20px;
           min-width: 150px;
           width: 10%;
@@ -44,6 +52,7 @@ export default function Navbar() {
 
         .menu_perfil {
           display: flex;
+          align-items: center;
           margin: 0 30px;
           justify-content: space-between;
           width: 180px;
