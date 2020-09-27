@@ -6,7 +6,7 @@ export default function Home() {
       <Head>
         <title>Home Office</title>
       </Head>
-      <h1>Main content</h1>
+      <h1>Pagina Home</h1>
     </>
   )
 }
