@@ -37,14 +37,14 @@ export default function Navbar() {
 
         .menu_tareas {
           display: flex;
-          margin: 10px;
+          margin: 0 10px;
           justify-content: space-between;
           width: 180px;
         }
 
         .menu_perfil {
           display: flex;
-          margin: 10px;
+          margin: 0 30px;
           justify-content: space-between;
           width: 180px;
         }

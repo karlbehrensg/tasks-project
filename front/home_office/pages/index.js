@@ -1,5 +1,4 @@
 import Head from "next/head"
-import AppLayout from "../components/AppLayout"
 
 export default function Home() {
   return (
@@ -7,9 +6,7 @@ export default function Home() {
       <Head>
         <title>Home Office</title>
       </Head>
-      <AppLayout>
-        <h1>Main content</h1>
-      </AppLayout>
+      <h1>Main content</h1>
     </>
   )
 }
